@@ -24,22 +24,24 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import HomePage from './src/components/HomePage';
+import PracticeComponent from './PracticeComponent';
 
-function App(): React.JSX.Element {
+function HomePage(): React.JSX.Element {
 
   return (
     <View style={styles.body}>
-      <HomePage></HomePage>
+      <PracticeComponent></PracticeComponent>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   body: {
-    backgroundColor: 'blue',
-    flex: 1
-  },
+    flex: 1,
+    backgroundColor: 'red',
+    alignContent: 'center',
+    justifyContent: 'center',
+  }
 });
 
-export default App;
+export default HomePage;
